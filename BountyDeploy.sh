@@ -39,3 +39,20 @@ cd /usr/share/wordlists
 git clone https://github.com/danielmiessler/SecLists/
 cd SecLists
 tar xvzf rockyou.tar.gz
+
+# DNS Tooling
+cd /usr/share/tools
+mkdir DNS
+cd DNS
+git clone https://github.com/lorenzog/dns-parallel-prober.git
+git clone https://github.com/aboul3la/Sublist3r
+git clone https://github.com/guelfoweb/knock
+apt -f install fierce
+
+# CMS Tooling
+cd /usr/share/tools
+mkdir CMS && cd CMS
+git clone https://github.com/droope/droopescan
+apt install -y wpscan
+git clone https://github.com/Dionach/CMSmap
+
