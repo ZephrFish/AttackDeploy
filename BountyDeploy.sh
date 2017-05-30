@@ -50,6 +50,7 @@ git clone https://github.com/lorenzog/dns-parallel-prober
 git clone https://github.com/aboul3la/Sublist3r
 git clone https://github.com/guelfoweb/knock
 git clone https://github.com/anshumanbh/brutesubs
+git clone https://github.com/jhaddix/domain
 apt -f install fierce
 
 # CMS Tooling
