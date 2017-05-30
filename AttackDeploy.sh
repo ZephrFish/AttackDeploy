@@ -48,7 +48,6 @@ git clone https://github.com/danielmiessler/RobotsDisallowed
 cd SecLists
 tar xvzf rockyou.tar.gz
 
-
 # DNS Tooling
 cd /usr/share/tools
 mkdir DNS
@@ -93,10 +92,18 @@ git clone https://github.com/ChrisTruncer/EyeWitness
 git clone https://github.com/robertdavidgraham/masscan
 
 # Web Server & SSL Setup
+# Note change the SITEHERE value to your domain name, this can be achieved with sed 's/SITEHERE/domain.com/g' against each file
 apt install nginx certbot openssl -y
-# Setup SSL Config for Server
-openssl dhparam -out /etc/nginx/ssl/dhparam.pem 4096
+## Setup Lets Encrypt
 wget https://raw.githubusercontent.com/ZephrFish/AttackDeploy/master/NginxConfig -o /etc/nginx/sites-enabled/default
+## Check for Syntax Errors
+nginx -t
+systemctl restart nginx # restart nginx before setting up letsencrypt
+# Run certbot with the webroot plugin to request an SSL certificate, change example.com to your domain
+certbot certonly --webroot --webroot-path=/var/www/html -d example.com -d www.example.com
+
+## Setup SSL Config for Server
+openssl dhparam -out /etc/nginx/ssl/dhparam.pem 4096
 wget https://raw.githubusercontent.com/ZephrFish/AttackDeploy/master/sslsnip-SITEHERE -o /etc/nginx/snippets/ssl-SITEHERE.conf
 wget https://raw.githubusercontent.com/ZephrFish/AttackDeploy/master/sslparams -o /etc/nginx/snippets/ssl-params.conf
 
