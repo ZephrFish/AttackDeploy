@@ -2,6 +2,7 @@
 # BountyDeploy - 0.1
 # ZephrFish
 # Script for deploying new VPS & downloading all required tools
+# Note: This is a work in progress :-)
 
 # Install Basic Repos
 rm -rf /etc/apt/sources.list
