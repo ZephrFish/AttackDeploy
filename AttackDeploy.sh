@@ -74,6 +74,13 @@ git clone https://github.com/libcrack/gitrecon
 git clone https://github.com/dxa4481/truffleHog
 git clone https://github.com/michenriksen/gitrob
 
+# OSINT Tooling 
+mkdir /usr/share/tools/OSINT
+cd /usr/share/tools/OSINT
+apt install -y recon-ng
+git clone https://github.com/smicallef/spiderfoot
+git clone https://github.com/ZephrFish/GoogD0rker
+
 
 # HTTP Analysis
 cd /usr/share/tools
