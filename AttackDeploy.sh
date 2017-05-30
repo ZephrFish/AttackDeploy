@@ -96,6 +96,7 @@ git clone https://github.com/robertdavidgraham/masscan
 apt install nginx -y
 # wget https://raw.githubusercontent.com/ZephrFish/AttackDeploy/master/NginxConfig -o /etc/nginx/sites-enabled/default
 # wget https://raw.githubusercontent.com/ZephrFish/AttackDeploy/master/sslsnip-SITEHERE -o /etc/nginx/snippets/ssl-SITEHERE.conf
+# wget https://raw.githubusercontent.com/ZephrFish/AttackDeploy/master/sslparams -o /etc/nginx/snippets/ssl-params.conf
 
 # Setup All the Fucking Things
 # WIP
