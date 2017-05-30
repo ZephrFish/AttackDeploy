@@ -67,6 +67,13 @@ apt install dirb -y
 git clone https://github.com/OJ/gobuster
 git clone https://github.com/henshin/filebuster
 
+# Git Recon
+mkdir /usr/share/tools/git
+cd /usr/share/tools/git
+git clone https://github.com/libcrack/gitrecon
+git clone https://github.com/dxa4481/truffleHog
+git clone https://github.com/michenriksen/gitrob
+
 
 # HTTP Analysis
 cd /usr/share/tools
