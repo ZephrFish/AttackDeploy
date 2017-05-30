@@ -73,4 +73,5 @@ cd /usr/share/tools
 git clone https://github.com/ChrisTruncer/EyeWitness
 git clone https://github.com/robertdavidgraham/masscan
 
-
+# Setup All the Fucking Things
+# WIP
