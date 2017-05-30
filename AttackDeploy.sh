@@ -95,7 +95,7 @@ git clone https://github.com/robertdavidgraham/masscan
 # Web Server & SSL Setup
 apt install nginx -y
 # wget https://raw.githubusercontent.com/ZephrFish/AttackDeploy/master/NginxConfig -o /etc/nginx/sites-enabled/default
-# wget https://raw.githubusercontent.com/ZephrFish/AttackDeploy/master/sslsnip-siteHere -o /etc/nginx/snippets/ssl-SITEHERE.conf
+# wget https://raw.githubusercontent.com/ZephrFish/AttackDeploy/master/sslsnip-SITEHERE -o /etc/nginx/snippets/ssl-SITEHERE.conf
 
 # Setup All the Fucking Things
 # WIP
