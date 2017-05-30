@@ -4,6 +4,12 @@
 # Script for deploying new VPS & downloading all required tools
 # Note: This is a work in progress :-)
 
+# Root Check
+if [ `whoami` != root ]; then
+    echo "This script must be run as root"
+    exit 1
+fi
+
 # Install Basic Repos
 rm -rf /etc/apt/sources.list
 touch /etc/apt/sources.list
@@ -81,11 +87,13 @@ apt install -y recon-ng
 git clone https://github.com/smicallef/spiderfoot
 git clone https://github.com/ZephrFish/GoogD0rker
 
-
 # HTTP Analysis
 cd /usr/share/tools
 git clone https://github.com/ChrisTruncer/EyeWitness
 git clone https://github.com/robertdavidgraham/masscan
 
+# Web Server & SSL Setup
+apt install nginx -y
+# wget https://raw.githubusercontent.com/ZephrFish/AttackDeploy/master/NginxConfig -o /etc/nginx/sites-enabled/default
 # Setup All the Fucking Things
 # WIP
