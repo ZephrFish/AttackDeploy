@@ -36,17 +36,20 @@ mkdir /usr/share/tools/scripts/
 
 # Pull Wordlists
 cd /usr/share/wordlists
-git clone https://github.com/danielmiessler/SecLists/
+git clone https://github.com/danielmiessler/SecLists
+git clone https://github.com/danielmiessler/RobotsDisallowed
 cd SecLists
 tar xvzf rockyou.tar.gz
+
 
 # DNS Tooling
 cd /usr/share/tools
 mkdir DNS
 cd DNS
-git clone https://github.com/lorenzog/dns-parallel-prober.git
+git clone https://github.com/lorenzog/dns-parallel-prober
 git clone https://github.com/aboul3la/Sublist3r
 git clone https://github.com/guelfoweb/knock
+git clone https://github.com/anshumanbh/brutesubs
 apt -f install fierce
 
 # CMS Tooling
@@ -55,4 +58,17 @@ mkdir CMS && cd CMS
 git clone https://github.com/droope/droopescan
 apt install -y wpscan
 git clone https://github.com/Dionach/CMSmap
+
+# Directory Busting
+cd /usr/share/tools
+apt install dirb -y
+git clone https://github.com/OJ/gobuster
+git clone https://github.com/henshin/filebuster
+
+
+# HTTP Analysis
+cd /usr/share/tools
+git clone https://github.com/ChrisTruncer/EyeWitness
+git clone https://github.com/robertdavidgraham/masscan
+
 
