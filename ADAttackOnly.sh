@@ -89,5 +89,5 @@ git clone https://github.com/ZephrFish/GoogD0rker
 
 # HTTP Analysis
 cd /usr/share/tools
-git clone https://github.com/ChrisTruncer/EyeWitness
+git clone https://github.com/ChrisTruncer/EyeWitness 
 git clone https://github.com/robertdavidgraham/masscan
