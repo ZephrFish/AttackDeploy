@@ -31,7 +31,8 @@ apt-get upgrade -y
 apt-get dist-upgrade -y
 
 # Install Basics
-apt install sudo git wget curl git zip ccze byobu zsh -y
+apt install sudo git wget curl git zip ccze byobu zsh golang -y
+
 
 # Install Basic Attack Tools
 apt-get install -y nikto dotdotpwn jsql nmap sqlmap sqlninja thc-ipv6 hydra metasploit-framework dirb
