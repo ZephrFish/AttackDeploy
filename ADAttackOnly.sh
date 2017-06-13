@@ -24,7 +24,8 @@ echo "deb-src http://security.debian.org/ stretch/updates main contrib non-free"
 
 # Install Kali Repos
 apt-key adv --keyserver pgp.mit.edu --recv-keys ED444FF07D8D0BF6
-echo "# Kali linux repos\ndeb http://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
+echo "# Kali linux repos" >> /etc/apt/sources.list
+echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
 
 # Update & Upgrade Repo
 apt update
