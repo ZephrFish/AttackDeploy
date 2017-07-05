@@ -56,6 +56,7 @@ mkdir DNS
 cd DNS
 git clone https://github.com/lorenzog/dns-parallel-prober
 git clone https://github.com/aboul3la/Sublist3r
+git clone https://github.com/michenriksen/aquatone
 git clone https://github.com/guelfoweb/knock
 git clone https://github.com/anshumanbh/brutesubs
 git clone https://github.com/jhaddix/domain
@@ -87,6 +88,7 @@ cd /usr/share/tools/OSINT
 apt install -y recon-ng
 git clone https://github.com/smicallef/spiderfoot
 git clone https://github.com/ZephrFish/GoogD0rker
+git clone https://github.com/GerbenJavado/LinkFinder 
 
 # HTTP Analysis
 cd /usr/share/tools
