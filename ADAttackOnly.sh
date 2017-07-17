@@ -94,3 +94,10 @@ git clone https://github.com/GerbenJavado/LinkFinder
 cd /usr/share/tools
 git clone https://github.com/ChrisTruncer/EyeWitness 
 git clone https://github.com/robertdavidgraham/masscan
+
+# BBF Tooling
+mkdir /usr/share/tools/BBF
+cd /usr/share/tools/BBF
+for y in $(wget https://bugbountyforum.com/tools/ &&  grep "/tools/" index.html | cut -d "=" -f 2 | cut -d "/" -f 2,3 | grep -v ">"); do wget https://bugbountyforum.com/$y; done && for x in $(ls); do grep "href=" $x | cut -d "=" -f 2 | grep github.com | cut -d "/" -f 3,4,5 | cut -d " " -f 1 |sed -e 's/^"//' -e 's/"$//' | grep -v "gist" >> Repos.txt; done && for a in $(cat Repos.txt);do git clone https://$a; done && find . -maxdepth 1 -type f -delete
+
+echo "That's all folks! You're good to go hack the planet!"
