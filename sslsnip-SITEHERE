@@ -1,2 +1,0 @@
-ssl_certificate /etc/letsencrypt/live/SITEHERE/fullchain.pem;
-ssl_certificate_key /etc/letsencrypt/live/SITEHERE/privkey.pem;
