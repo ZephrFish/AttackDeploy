@@ -18,3 +18,18 @@ If however you do not have git, you can also either copy paste it OR use wget:
 ```
 wget https://raw.githubusercontent.com/ZephrFish/AttackDeploy/master/AttackDeploy.sh -O AttackDeploy.sh && chmod +x AttackDeploy.sh && ./AttackDeploy.sh
 ```
+
+### Currently Includes
+
+- Recon 
+  - DNS
+  - Enumeration
+  - Mobile
+  - Fingerprinting/Profiling
+  
+  - A bunch of wordlists
+  - some other things
+  
+  
+  If you've got tool suggestions, make a pull request
+  ----
